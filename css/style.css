@@ -1,0 +1,29 @@
+/* -------------------------- debug -------------------------- */
+
+/* You can comment/uncomment 1 line below for debugging */
+/* Try it 😉 */
+
+/* * {box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.5) inset;} */
+/* body {box-shadow: -1px 1px 10px 3px red inset;} */
+/* header {box-shadow: -1px 1px 10px 3px yellow inset;} */
+/* section {box-shadow: -1px 1px 10px 3px blue inset;} */
+
+/* ----------------------------------------------------------- */
+
+*{
+    margin: 0; padding: 0;
+    /* ... here, code for anchor link animations */
+}
+
+
+body {background-color: rgb(245, 245, 245);}
+header, footer {background-color: rgb(220, 220, 220);}
+
+
+/**
+ * ...
+ * ... Mobile fisrt
+ * ...
+ * ... your code here
+ * ...
+ */
