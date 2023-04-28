@@ -64,7 +64,7 @@ div#header-container-1 {
     width:100%;
     /* On centre le div verticalement */
     position: relative;
-    top: 32%;
+    top: 20%;
     /* on dispose le nom et le logo horizontalement */
     display: flex;
     flex-direction: row;
@@ -80,20 +80,20 @@ h1 {
     font-style: normal;
     text-align: center;
     padding: 0;
-    margin: 0 0 0 20%;
+    margin: 0 0 0 15%;
     /* pour éviter le retour à la ligne */
     white-space: nowrap;
 }
 
 /* TODO : image à centrer */
 div.image-logo {
-    /* width: 500px;
-    height: 281px; */
+    width: 650px;
+    height: 365px;
     margin: 100px;
     background-image: url('../images/logo-big.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 a {
@@ -113,7 +113,6 @@ a.section-1-anchor {
 
     div#header-container-1 {
         top: 30%;
-        background-color: brown;
     }
 
     h1 {
@@ -131,7 +130,6 @@ a.section-1-anchor {
         background-image: url('../images/logo-small.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
     }
 
 }
@@ -172,7 +170,6 @@ a.section-1-anchor {
         background-image: url('../images/logo-small.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
     }
 
     a.section-1-anchor {
