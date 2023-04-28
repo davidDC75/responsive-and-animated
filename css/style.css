@@ -61,7 +61,7 @@ div#header-container-1 {
     width:100%;
     /* On centre le div verticalement */
     position: relative;
-    top: 40%;
+    top: 35%;
     /* on dispose le nom et le logo horizontalement */
     display: flex;
     flex-direction: row;
@@ -75,19 +75,22 @@ h1 {
     font-size: 2.3rem;
     font-weight: 400;
     font-style: normal;
-    margin: 0 auto 0 auto;
+    text-align: center;
     padding: 0;
     margin: 0;
+    flex-grow: 2;
 }
 
+/* TODO : image à centrer */
 div.image-logo {
+    text-align: center;
     width: 500px;
     height: 281px;
-    margin: 0 auto 0 auto;
+    margin: 100px;
     background-image: url('../images/logo-big.png');
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     background-color: white;
 }
 
@@ -103,6 +106,7 @@ a.section-1-anchor {
     bottom: 20px;
 }
 
+/* Pour tablette */
 @media screen and (max-width: 810px) and (min-width: 376px) {
 
     div#header-container-1 {
@@ -112,21 +116,14 @@ a.section-1-anchor {
         top: 40%;
         /* on dispose le nom et le logo horizontalement */
         /* display: flex; */
-        gap: 90px;
         /* flex-direction: flex;
         justify-content: center;
         align-items: center; */
     }
 
-    /* TODO : centrer le h1 */
-
     h1 {
         font-size: 1.2rem;
-        font-weight: 400;
-        font-style: normal;
-        margin: 0 auto 0 auto;
-        padding: 0;
-        margin: 0;
+        background-color: blue;
     }
 
     span.firstname-1 {
@@ -136,7 +133,7 @@ a.section-1-anchor {
     div.image-logo {
         width: 170px;
         height: 128px;
-        margin: 0 auto 0 auto;
+        margin: 50px;
         background-image: url('../images/logo-small.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -145,7 +142,7 @@ a.section-1-anchor {
 
 }
 
-
+/* Pour smartphone */
 @media screen and (max-width: 375px) {
 
     span.firstname-1 {
