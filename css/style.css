@@ -49,6 +49,9 @@ header, footer {
     background-color: rgb(220, 220, 220);
 }
 
+/*
+    DEBUT DU HEADER
+*/
 header {
     /* Le header prend 100% verticalement */
     width: 100%;
@@ -61,11 +64,11 @@ div#header-container-1 {
     width:100%;
     /* On centre le div verticalement */
     position: relative;
-    top: 35%;
+    top: 32%;
     /* on dispose le nom et le logo horizontalement */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -77,20 +80,19 @@ h1 {
     font-style: normal;
     text-align: center;
     padding: 0;
-    margin: 0;
-    flex-grow: 2;
+    margin: 0 0 0 20%;
+    /* pour éviter le retour à la ligne */
+    white-space: nowrap;
 }
 
 /* TODO : image à centrer */
 div.image-logo {
-    text-align: center;
     width: 500px;
     height: 281px;
     margin: 100px;
     background-image: url('../images/logo-big.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-color: white;
 }
 
@@ -145,6 +147,12 @@ a.section-1-anchor {
 /* Pour smartphone */
 @media screen and (max-width: 375px) {
 
+    h1 {
+        margin: 0;
+        font-size: 1.2rem;
+        width:100%;
+        background-color: aqua;
+    }
     span.firstname-1 {
         display: none;
     }
@@ -156,15 +164,15 @@ a.section-1-anchor {
     div#header-container-1 {
         background-color: white;
         width:100%;
-        /* On centre le div verticalement */
+        /* On place le div verticalement */
         position: relative;
-        top: 10%;
-        /* on dispose le nom et le logo horizontalement */
+        top: 23%;
+        /* on dispose le nom et le logo verticalement */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 130px;
+        gap: 170px;
     }
 
     div.image-logo {
