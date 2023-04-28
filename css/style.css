@@ -69,6 +69,8 @@ div#header-container-1 {
     align-items: center;
 }
 
+/* TODO : centrer le h1 */
+
 h1 {
     font-size: 2.3rem;
     font-weight: 400;
@@ -79,13 +81,13 @@ h1 {
 }
 
 div.image-logo {
-    width: 50%;
+    width: 500px;
     height: 281px;
-    object-fit: cover;
     margin: 0 auto 0 auto;
     background-image: url('../images/logo-big.png');
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    /* background-size: cover; */
     background-color: white;
 }
 
@@ -103,8 +105,42 @@ a.section-1-anchor {
 
 @media screen and (max-width: 810px) and (min-width: 376px) {
 
+    div#header-container-1 {
+        /* width:100%; */
+        /* On centre le div verticalement */
+        position: relative;
+        top: 40%;
+        /* on dispose le nom et le logo horizontalement */
+        /* display: flex; */
+        gap: 90px;
+        /* flex-direction: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    /* TODO : centrer le h1 */
+
+    h1 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        margin: 0;
+    }
+
     span.firstname-1 {
         display: none;
+    }
+
+    div.image-logo {
+        width: 170px;
+        height: 128px;
+        margin: 0 auto 0 auto;
+        background-image: url('../images/logo-small.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 }
@@ -131,6 +167,17 @@ a.section-1-anchor {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 130px;
+    }
+
+    div.image-logo {
+        width: 170px;
+        height: 128px;
+        margin: 0 auto 0 auto;
+        background-image: url('../images/logo-small.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     a.section-1-anchor {
