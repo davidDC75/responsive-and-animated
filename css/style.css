@@ -54,6 +54,12 @@ a {
     color: black;
 }
 
+/* type de position des ancres */
+a.anchor-common {
+    display: block;
+    position: absolute;
+}
+
 /*
     DEBUT DU HEADER
 */
@@ -101,8 +107,6 @@ div.image-logo {
 }
 
 a.section-1-anchor {
-    display: block;
-    position: absolute;
     left: 50%;
     top: 93%;
 }
@@ -122,7 +126,7 @@ div#section-1-container-1 {
     margin: 0 auto 0 auto;
     padding: 0;
     position: relative;
-    top: 40%;
+    top: 35%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -139,14 +143,14 @@ div.square {
 }
 
 a.section-2-anchor {
-    display: inline;
-    position: absolute;
     left: 50%;
     top: 193%;
 }
 
 /* Pour tablette */
 @media screen and (max-width: 810px) and (min-width: 376px) {
+
+    /* PARTIE HEADER */
 
     div#header-container-1 {
         width: 60%;
@@ -170,10 +174,24 @@ a.section-2-anchor {
         background-repeat: no-repeat;
     }
 
+    /* PARTIE SECTION 1 */
+
+    div#section-1-container-1 {
+        top: 30%;
+    }
+
+    /* TODO : chercher à garder les proportions des div lors d'un redimensionnement */
+    div.square {
+        display: block;
+        width: 250px;
+        height: 250px;
+    }
 }
 
 /* Pour smartphone */
 @media screen and (max-width: 375px) {
+
+    /* PARTIE HEADER */
 
     h1 {
         margin: 0;
@@ -218,5 +236,7 @@ a.section-2-anchor {
         left: 90%;
         bottom: 15px;
     }
+
+    /* PARTIE SECTION 1 */
 
 }
