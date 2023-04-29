@@ -42,11 +42,16 @@ html, body, header, section, main, footer {
 body {
     width:100%;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(245, 245, 245);
+    background-color: white;
 }
 
 header, footer {
     background-color: rgb(220, 220, 220);
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /*
@@ -61,18 +66,19 @@ header {
 }
 
 div#header-container-1 {
-    width:100%;
-    /* On centre le div verticalement */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* On positionne le div verticalement */
     position: relative;
-    top: 20%;
+    top: 30%;
     /* on dispose le nom et le logo horizontalement */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 150px;
 }
-
-/* TODO : centrer le h1 */
 
 h1 {
     font-size: 2.3rem;
@@ -85,20 +91,13 @@ h1 {
     white-space: nowrap;
 }
 
-/* TODO : image à centrer */
 div.image-logo {
     width: 650px;
     height: 365px;
-    margin: 100px;
     background-image: url('../images/logo-big.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 a.section-1-anchor {
@@ -112,7 +111,9 @@ a.section-1-anchor {
 @media screen and (max-width: 810px) and (min-width: 376px) {
 
     div#header-container-1 {
+        width: 60%;
         top: 30%;
+        gap: 50px;
     }
 
     h1 {
@@ -126,9 +127,8 @@ a.section-1-anchor {
     div.image-logo {
         width: 170px;
         height: 128px;
-        margin: 50px;
         background-image: url('../images/logo-small.jpg');
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
     }
 
