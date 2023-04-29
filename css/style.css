@@ -160,6 +160,7 @@ div#grid-circle {
     display: grid;
     width: 70%;
     height: 80%;
+    align-items: center;
     position: relative;
     top: 11%;
     margin: 0 auto 0 auto;
@@ -170,6 +171,10 @@ div#grid-circle {
 }
 
 /* On positionne les cercles dans la grille */
+
+div#grid-circle > div {
+    background-color: blue;
+}
 
 /* ligne 1 */
 div.circle-h-grid {
@@ -292,6 +297,16 @@ a.section-footer-anchor {
     }
 
     /* PARTIE SECTION 2 */
+
+    /* On définit le div de la grille */
+    div#grid-circle {
+        display: grid;
+        width: 70%;
+        height: 50%;
+        position: relative;
+        top: 20%;
+        /* background-color: blue; */
+    }
 
     /* on dessine les cercles */
     div.circle {
