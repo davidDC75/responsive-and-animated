@@ -146,6 +146,110 @@ a.section-2-anchor {
     top: 193%;
 }
 
+/* DEBUT SECTION 2 */
+
+section#section-2 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    background-color: aqua;
+}
+
+/* On définit le div de la grille */
+div#grid-circle {
+    display: grid;
+    width: 70%;
+    height: 80%;
+    position: relative;
+    top: 11%;
+    margin: 0 auto 0 auto;
+    background-color: blue;
+    /* GRID */
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+/* Les éléments de la grille */
+div#grid-circle > div {
+    padding: 20px 0px;
+    background-color: greenyellow;
+    border: 2px solid red;
+}
+
+/* On positionne les cercles dans la grille */
+
+/* ligne 1 */
+div.circle-h {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* ligne 2 */
+div.circle-c {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+div.circle-j {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* ligne 3 */
+div.circle-p {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+div.circle-m {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+div.circle-s {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* on dessine les cercles */
+div.circle {
+    /* on positionne les cercles dans la cellule de la grid*/
+    position: relative;
+    top: 23%;
+    margin: 0 auto 0 auto;
+    background: white;
+    border-radius:50%;
+    /* Si on modifie la taille, il faut modifier juste en bas le line-height pour le vertical-align du texte */
+    width:160px;
+    height:160px;
+    border:1px solid black;
+}
+
+div.circle-text-align {
+    text-align:center;
+    /* alignement verticale */
+    line-height: 160px;
+}
+
+div.circle-text-style {
+    font-size: 1.5rem;
+}
+
+
+
+
 /* Pour tablette */
 @media screen and (max-width: 810px) and (min-width: 376px) {
 
