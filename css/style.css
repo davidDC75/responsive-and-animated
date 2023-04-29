@@ -251,7 +251,11 @@ div.circle-text-style {
     font-size: 1.5rem;
 }
 
-
+/* L'ancre de la section 2 */
+a.section-footer-anchor {
+    left: 50%;
+    top: 293%;
+}
 
 
 /* Pour tablette */
