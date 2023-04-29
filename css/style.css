@@ -179,7 +179,7 @@ div#grid-circle > div {
 /* On positionne les cercles dans la grille */
 
 /* ligne 1 */
-div.circle-h {
+div.circle-h-grid {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -187,14 +187,14 @@ div.circle-h {
 }
 
 /* ligne 2 */
-div.circle-c {
+div.circle-c-grid {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-div.circle-j {
+div.circle-j-grid {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -202,21 +202,21 @@ div.circle-j {
 }
 
 /* ligne 3 */
-div.circle-p {
+div.circle-p-grid {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
-div.circle-m {
+div.circle-m-grid {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
-div.circle-s {
+div.circle-s-grid {
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 3;
@@ -229,11 +229,15 @@ div.circle {
     position: relative;
     top: 23%;
     margin: 0 auto 0 auto;
-    background: white;
-    border-radius:50%;
     /* Si on modifie la taille, il faut modifier juste en bas le line-height pour le vertical-align du texte */
     width:160px;
     height:160px;
+
+}
+
+div.circle-style {
+    border-radius:50%;
+    background: white;
     border:1px solid black;
 }
 
