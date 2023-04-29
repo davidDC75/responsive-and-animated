@@ -118,7 +118,6 @@ section#section-1 {
     width: 100%;
     height: 100%;
     margin: 0 auto 0 auto;
-    background-color: aqua;
 }
 
 div#section-1-container-1 {
@@ -231,12 +230,28 @@ a.section-2-anchor {
     a.section-1-anchor {
         width:8%;
         font-size: 1rem;
-        display: block;
-        position: absolute;
         left: 90%;
-        bottom: 15px;
+        top: 93%;
     }
 
     /* PARTIE SECTION 1 */
+
+    div#section-1-container-1 {
+        top: 25%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    div.square {
+        width: 160px;
+        height: 160px;
+    }
+
+    a.section-2-anchor {
+        width:8%;
+        font-size: 1rem;
+        left: 90%;
+        top: 193%;
+    }
 
 }
