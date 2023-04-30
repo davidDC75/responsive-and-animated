@@ -316,11 +316,11 @@ div.circle-style {
 div.circle-text-align {
     text-align:center;
     /* alignement verticale */
-    line-height: 200px;
+    line-height: 220px;
 }
 
 span.letter {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 /* L'ancre de la section 2 */
@@ -473,10 +473,14 @@ footer#footer p {
 
     }
 
+    span.letter {
+        font-size: 40px;
+    }
+
     div.circle-text-align {
         text-align:center;
         /* alignement verticale */
-        line-height: 100px;
+        line-height: 130px;
     }
 
 }
@@ -592,14 +596,14 @@ footer#footer p {
 
     }
 
+    span.letter {
+        font-size: 30px;
+    }
+
     div.circle-text-align {
         text-align:center;
         /* alignement verticale */
-        line-height: 70px;
-    }
-
-    div.circle-text-style {
-        font-size: 1.2rem;
+        line-height: 90px;
     }
 
     /* L'ancre de la section 2 */
