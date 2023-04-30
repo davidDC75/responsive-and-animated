@@ -98,6 +98,9 @@ div#header-container-1 {
 }
 
 h1 {
+    position: relative;
+    top: 0px;
+    /* background-color: blue; */
     font-size: 2.3rem;
     font-weight: 400;
     font-style: normal;
@@ -106,6 +109,8 @@ h1 {
     margin: 0 0 0 15%;
     /* pour éviter le retour à la ligne */
     white-space: nowrap;
+    animation-name: opacity-animation, h1-top-animation, blur-animation;
+    animation-duration: 2s, 1s, 2.5s;
 }
 
 div.image-logo {
@@ -115,11 +120,15 @@ div.image-logo {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    animation-name: opacity-animation;
+    animation-duration: 1.5s;
 }
 
 a.section-1-anchor {
     left: 50%;
     top: 93%;
+    animation-name: opacity-animation;
+    animation-duration: 4s;
 }
 
 /******************
@@ -303,6 +312,42 @@ footer#footer p {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+/******************
+    DEBUT ANIMATION
+*******************/
+
+/* keyframes générales */
+
+/* keyframes opacity */
+@keyframes opacity-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blur-animation {
+    from {
+        filter: blur(4px);
+    }
+    to {
+        filter: blur(0)
+    }
+}
+
+/* keyframes spécifiques */
+
+@keyframes h1-top-animation {
+    from {
+        top: -200px;
+    }
+    to {
+        top: 0px;
+    }
 }
 
 /****************
