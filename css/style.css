@@ -43,6 +43,8 @@ html, body, header, section, main, footer {
 }
 
 html {
+    /* Animation scrolling lorsqu'on clique sur une ancre */
+    scroll-behavior:smooth;
     font-size: 1vw;
 }
 
@@ -109,7 +111,7 @@ h1 {
 div.image-logo {
     width: 650px;
     height: 365px;
-    background-image: url('../images/logo-big.png');
+    background-image: url('../images/arthur-morgan-big.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -183,9 +185,9 @@ div#grid-circle {
 
 /* On positionne les cercles dans la grille */
 
-div#grid-circle > div {
-    /* background-color: blue; */
-}
+/* div#grid-circle > div {
+    background-color: blue;
+} */
 
 /* ligne 1 */
 div.circle-h-grid {
@@ -289,10 +291,10 @@ footer#footer p {
     text-align: center;
 }
 
-
 /****************
     Pour tablette
 *****************/
+
 @media screen and (max-width: 810px) and (min-width: 376px) {
 
     html {
@@ -377,6 +379,7 @@ footer#footer p {
 /******************
     Pour smartphone
 *******************/
+
 @media screen and (max-width: 375px) {
 
     html {
