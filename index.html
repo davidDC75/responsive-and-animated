@@ -23,13 +23,13 @@
 
         <header>
             <div id="header-container-1">
-                <h1><span class="firstname-0">A</span><span class="firstname-1">rthur</span><span><!-- ... 2 spaces --></span><span class="lastname-0"> M</span><span class="lastname-1">organ</span></h1>
+                <h1 id="title" class="animation-title"><span class="firstname-0">A</span><span class="firstname-1">rthur</span><span><!-- ... 2 spaces --></span><span class="lastname-0"> M</span><span class="lastname-1">organ</span></h1>
 
-                <div class="image-logo">
+                <div id='image-logo' class="image-logo animation-image-logo">
                     <!-- ... your responsive logo -->
                 </div>
             </div>
-            <a href="#section-1" class="material-symbols-outlined anchor-common section-1-anchor">arrow_circle_down</a>
+            <a id="button-header" href="#section-1" class="material-symbols-outlined anchor-common section-1-anchor">arrow_circle_down</a>
             <!-- ... the anchor link for "section-1" -->
 
         </header>
@@ -37,11 +37,11 @@
         <section id="section-1">
 
             <div id="section-1-container-1">
-                <div class="square ours">
+                <div id="ours" class="square ours ours-animation">
                     <!-- possible addition for animation -->
                 </div>
 
-                <div class="square gun">
+                <div id="gun" class="square gun gun-animation">
                     <!-- possible addition for animation -->
                 </div>
             </div>
@@ -86,12 +86,12 @@
 
         <footer id="footer">
 
-            <a href="#top" class="material-symbols-outlined anchor-common footer-top-anchor">arrow_circle_up</a>
+            <a id="button-footer" href="#top" class="material-symbols-outlined anchor-common footer-top-anchor">arrow_circle_up</a>
             <!-- ... the anchor link for "top" -->
 
             <p>&copy; 2023 - David De Castro</p>
 
         </footer>
-
+        <script src="js/main.js"></script>
     </body>
 </html>

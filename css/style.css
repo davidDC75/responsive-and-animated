@@ -100,10 +100,9 @@ div#header-container-1 {
     gap: 150px;
 }
 
-h1 {
+h1#title {
     position: relative;
     top: 0px;
-    /* background-color: blue; */
     font-size: 2.3rem;
     font-weight: 400;
     font-style: normal;
@@ -112,10 +111,13 @@ h1 {
     margin: 0 0 0 15%;
     /* pour éviter le retour à la ligne */
     white-space: nowrap;
+}
 
+h1.animation-title {
     animation-name: opacity-keyframes, h1-top-keyframes, blur-keyframes;
     animation-timing-function: ease-in, ease-out, ease-out;
     animation-duration: 2s, 2s, 2.5s;
+    animation-iteration-count: 1;
 }
 
 div.image-logo {
@@ -125,16 +127,18 @@ div.image-logo {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-
-    animation-name: opacity-keyframes, blur-keyframes;
-    animation-timing-function: ease-in;
-    animation-duration: 1.5s, 1.5s;
-
     transition: all 450ms;
 }
 
 div.image-logo:hover {
     transform: rotate(-4deg);
+}
+
+div.animation-image-logo {
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s, 1.5s;
+    animation-iteration-count: 1;
 }
 
 a.section-1-anchor {
@@ -180,12 +184,13 @@ div.ours {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-
-    animation-name: opacity-keyframes, blur-keyframes;
-    /* animation-play-state: paused; */
-    animation-duration: 2s, 2s;
-
+    /* Pour l'effet de rotation quand on survole l'image (hover) */
     transition: all 450ms;
+}
+
+div.ours-animation {
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-duration: 2s, 2s;
 }
 
 div.ours:hover {
@@ -198,12 +203,13 @@ div.gun {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-
-    animation-name: opacity-keyframes, blur-keyframes;
-    /* animation-play-state: paused; */
-    animation-duration: 3s, 3s;
-
+    /* Pour l'effet de rotation quand on survole l'image (hover) */
     transition: all 450ms;
+}
+
+div.gun-animation {
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-duration: 3s, 3s;
 }
 
 div.gun:hover {
@@ -398,7 +404,7 @@ footer#footer p {
         gap: 50px;
     }
 
-    h1 {
+    h1#title {
         font-size: 1.2rem;
     }
 
@@ -493,11 +499,12 @@ footer#footer p {
         PARTIE HEADER
     *****************/
 
-    h1 {
+    h1#title {
         margin: 0;
         font-size: 1.2rem;
         width:100%;
     }
+
     span.firstname-1 {
         display: none;
     }
