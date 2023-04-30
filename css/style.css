@@ -42,6 +42,10 @@ html, body, header, section, main, footer {
     height: 100%;
 }
 
+html {
+    font-size: 1vw;
+}
+
 body {
     width:100%;
     font-family: 'Poppins', sans-serif;
@@ -291,6 +295,10 @@ footer#footer p {
 *****************/
 @media screen and (max-width: 810px) and (min-width: 376px) {
 
+    html {
+        font-size: 2vw;
+    }
+
     /****************
         PARTIE HEADER
     *****************/
@@ -370,6 +378,10 @@ footer#footer p {
     Pour smartphone
 *******************/
 @media screen and (max-width: 375px) {
+
+    html {
+        font-size: 5vw;
+    }
 
     /****************
         PARTIE HEADER
