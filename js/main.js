@@ -16,6 +16,8 @@ const gridAnim4 = document.getElementById('grid-anim-4');
 const gridAnim5 = document.getElementById('grid-anim-5');
 const gridAnim6 = document.getElementById('grid-anim-6');
 
+
+// Les ancres
 const btnHeader = document.getElementById('button-header');
 const btnFooter = document.getElementById('button-footer');
 const btnSection1 = document.getElementById('button-section-1');
