@@ -57,12 +57,12 @@ btnSection1.onclick = () => {
     gridAnim6.className='circle-s-grid';
     window.requestAnimationFrame(function (time) {
         window.requestAnimationFrame(function (time) {
-            gridAnim1.className='circle-h-grid grid-anim-1';
-            gridAnim2.className='circle-c-grid grid-anim-2';
-            gridAnim3.className='circle-j-grid grid-anim-3';
-            gridAnim4.className='circle-p-grid grid-anim-4';
-            gridAnim5.className='circle-m-grid grid-anim-5';
-            gridAnim6.className='circle-s-grid grid-anim-6';
+            gridAnim1.className='circle-h-grid grid-anim grid-anim-1';
+            gridAnim2.className='circle-c-grid grid-anim grid-anim-2';
+            gridAnim3.className='circle-j-grid grid-anim grid-anim-3';
+            gridAnim4.className='circle-p-grid grid-anim grid-anim-4';
+            gridAnim5.className='circle-m-grid grid-anim grid-anim-5';
+            gridAnim6.className='circle-s-grid grid-anim grid-anim-6';
         })
     });
 }
