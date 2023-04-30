@@ -75,8 +75,8 @@ a.anchor-common {
     DEBUT DU HEADER
 *******************/
 header {
-    /* Le header prend 100% verticalement */
     width: 100%;
+    /* Le header prend 100% verticalement */
     height:100%;
     margin: 0 auto 0 auto;
     background-color: white;
@@ -109,8 +109,9 @@ h1 {
     margin: 0 0 0 15%;
     /* pour éviter le retour à la ligne */
     white-space: nowrap;
-    animation-name: opacity-animation, h1-top-animation, blur-animation;
-    animation-duration: 2s, 1s, 2.5s;
+    animation-name: opacity-keyframes, h1-top-keyframes, blur-keyframes;
+    animation-timing-function: ease-in, ease-out, ease-out;
+    animation-duration: 2s, 2s, 2.5s;
 }
 
 div.image-logo {
@@ -120,15 +121,16 @@ div.image-logo {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    animation-name: opacity-animation;
-    animation-duration: 1.5s;
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s, 1.5s;
 }
 
 a.section-1-anchor {
     left: 50%;
     top: 93%;
-    animation-name: opacity-animation;
-    animation-duration: 4s;
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-duration: 4s, 2s;
 }
 
 /******************
@@ -158,21 +160,28 @@ div.square {
     height: 300px;
     margin: 0;
     padding: 0;
-    border: 1px solid black;
 }
 
 div.ours {
+    border: 1px solid black;
     background-image: url('../images/ours-legendaire-300-300.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    animation-name: opacity-keyframes, blur-keyframes;
+    /* animation-play-state: paused; */
+    animation-duration: 2s, 2s;
 }
 
 div.gun {
+    border: 1px solid black;
     background-image: url('../images/gun-300-300.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    animation-name: opacity-keyframes, blur-keyframes;
+    /* animation-play-state: paused; */
+    animation-duration: 3s, 3s;
 }
 
 a.section-2-anchor {
@@ -321,40 +330,32 @@ footer#footer p {
 /* keyframes générales */
 
 /* keyframes opacity */
-@keyframes opacity-animation {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes opacity-keyframes {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-@keyframes blur-animation {
-    from {
-        filter: blur(4px);
-    }
-    to {
-        filter: blur(0)
-    }
+/* keyframes effet de flou */
+@keyframes blur-keyframes {
+    from { filter: blur(4px); }
+    to { filter: blur(0); }
 }
 
 /* keyframes spécifiques */
 
-@keyframes h1-top-animation {
-    from {
-        top: -200px;
-    }
-    to {
-        top: 0px;
-    }
+/* keyframes du h1 */
+@keyframes h1-top-keyframes {
+    from { top: -200px; }
+    60% { top: 20px; }
+    80% { top: -10px; }
+    to { top: 0px; }
 }
 
 /****************
     Pour tablette
 *****************/
 
-@media screen and (max-width: 810px) and (min-width: 376px) {
+@media screen and (max-width: 810px) and (min-width: 377px) {
 
     html {
         font-size: 2vw;
@@ -455,7 +456,7 @@ footer#footer p {
     Pour smartphone
 *******************/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
 
     html {
         font-size: 5vw;
