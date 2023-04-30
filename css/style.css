@@ -110,7 +110,7 @@ h1 {
 
 div.image-logo {
     width: 650px;
-    height: 365px;
+    height: 441px;
     background-image: url('../images/arthur-morgan-big.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -150,6 +150,20 @@ div.square {
     margin: 0;
     padding: 0;
     border: 1px solid black;
+}
+
+div.ours {
+    background-image: url('../images/ours-legendaire-300-300.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.gun {
+    background-image: url('../images/gun-300-300.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 a.section-2-anchor {
@@ -320,11 +334,13 @@ footer#footer p {
     }
 
     div.image-logo {
-        width: 170px;
+        width: 162px;
         height: 128px;
-        background-image: url('../images/logo-small.jpg');
+        background-image: url('../images/arthur-morgan-small.png');
         background-position: center center;
         background-repeat: no-repeat;
+        background-color: black;
+        transform: rotate(-6deg);
     }
 
     /*******************
@@ -340,6 +356,20 @@ footer#footer p {
         display: block;
         width: 250px;
         height: 250px;
+    }
+
+    div.ours {
+        background-image: url('../images/ours-legendaire-250-250.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    div.gun {
+        background-image: url('../images/gun-250-250.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     /*******************
@@ -417,12 +447,14 @@ footer#footer p {
     }
 
     div.image-logo {
-        width: 170px;
+        width: 162px;
         height: 128px;
         margin: 0 auto 0 auto;
-        background-image: url('../images/logo-small.jpg');
+        background-image: url('../images/arthur-morgan-small.png');
         background-position: center;
         background-repeat: no-repeat;
+        background-color: black;
+        transform: rotate(-6deg);
     }
 
     a.section-1-anchor {
@@ -445,6 +477,20 @@ footer#footer p {
     div.square {
         width: 160px;
         height: 160px;
+    }
+
+    div.ours {
+        background-image: url('../images/ours-legendaire-160-160.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    div.gun {
+        background-image: url('../images/gun-160-160.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     a.section-2-anchor {
