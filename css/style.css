@@ -296,6 +296,61 @@ div.circle-s-grid {
     grid-row-end: 4;
 }
 
+/* Animation pour les grid */
+div.grid-anim-1 {
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-timing-function: ease-in, ease-out;
+    animation-duration: 1.5s, 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+div.grid-anim-2 {
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-timing-function: ease-in, ease-out;
+    animation-duration: 1.5s, 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+div.grid-anim-3 {
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-timing-function: ease-in, ease-out;
+    animation-duration: 1.5s, 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+}
+
+div.grid-anim-4 {
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-timing-function: ease-in, ease-out;
+    animation-duration: 1.5s, 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.9s;
+    animation-fill-mode: both;
+}
+
+div.grid-anim-5 {
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-timing-function: ease-in, ease-out;
+    animation-duration: 1.5s, 2s;
+    animation-iteration-count: 1;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+}
+
+div.grid-anim-6 {
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-timing-function: ease-in, ease-out;
+    animation-duration: 1.5s, 2s;
+    animation-iteration-count: 1;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+
 /* on dessine les cercles */
 div.circle {
     /* on positionne les cercles dans la cellule de la grid*/
