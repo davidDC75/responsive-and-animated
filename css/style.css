@@ -21,6 +21,9 @@
 /* Import de la font Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Import de la font Oleo Script */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
 /* Import des icônes */
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0');
 
@@ -50,7 +53,7 @@ html {
 
 body {
     width:100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oleo Script', cursive;
     background-color: white;
 }
 
@@ -109,6 +112,7 @@ h1 {
     margin: 0 0 0 15%;
     /* pour éviter le retour à la ligne */
     white-space: nowrap;
+
     animation-name: opacity-keyframes, h1-top-keyframes, blur-keyframes;
     animation-timing-function: ease-in, ease-out, ease-out;
     animation-duration: 2s, 2s, 2.5s;
@@ -121,14 +125,22 @@ div.image-logo {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+
     animation-name: opacity-keyframes, blur-keyframes;
     animation-timing-function: ease-in;
     animation-duration: 1.5s, 1.5s;
+
+    transition: all 450ms;
+}
+
+div.image-logo:hover {
+    transform: rotate(-4deg);
 }
 
 a.section-1-anchor {
     left: 50%;
     top: 93%;
+
     animation-name: opacity-keyframes, blur-keyframes;
     animation-duration: 4s, 2s;
 }
@@ -168,9 +180,16 @@ div.ours {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+
     animation-name: opacity-keyframes, blur-keyframes;
     /* animation-play-state: paused; */
     animation-duration: 2s, 2s;
+
+    transition: all 450ms;
+}
+
+div.ours:hover {
+    transform: rotate(-4deg);
 }
 
 div.gun {
@@ -179,9 +198,16 @@ div.gun {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+
     animation-name: opacity-keyframes, blur-keyframes;
     /* animation-play-state: paused; */
     animation-duration: 3s, 3s;
+
+    transition: all 450ms;
+}
+
+div.gun:hover {
+    transform: rotate(4deg);
 }
 
 a.section-2-anchor {
@@ -291,6 +317,7 @@ div.circle-text-align {
 }
 
 div.circle-text-style {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -337,7 +364,7 @@ footer#footer p {
 
 /* keyframes effet de flou */
 @keyframes blur-keyframes {
-    from { filter: blur(4px); }
+    from { filter: blur(8px); }
     to { filter: blur(0); }
 }
 
