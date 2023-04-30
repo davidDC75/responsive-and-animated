@@ -310,7 +310,10 @@ div.circle {
 
 div.circle-style {
     background: white;
-    border:2px solid black;
+    border:1px solid #a2a2a2;
+    background: linear-gradient(144deg,#ffffff 0%, #e0e0e0 50%, #a1a0a0 80%);
+    box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+    text-shadow: 4px 4px 7px rgba(0,0,0,0.54);
 }
 
 div.circle-text-align {
@@ -319,7 +322,8 @@ div.circle-text-align {
     line-height: 220px;
 }
 
-span.letter {
+span.icons-style {
+    color: black;
     font-size: 70px;
 }
 
@@ -473,7 +477,7 @@ footer#footer p {
 
     }
 
-    span.letter {
+    span.icons-style {
         font-size: 40px;
     }
 
@@ -596,7 +600,7 @@ footer#footer p {
 
     }
 
-    span.letter {
+    span.icons-style {
         font-size: 30px;
     }
 
