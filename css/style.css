@@ -33,6 +33,9 @@
   'opsz' 40
 }
 
+/*********************
+    Définition globale
+**********************/
 html, body, header, section, main, footer {
     margin: 0;
     padding: 0;
@@ -54,15 +57,17 @@ a {
     color: black;
 }
 
-/* type de position des ancres */
+/******************************
+    type de position des ancres
+*******************************/
 a.anchor-common {
     display: block;
     position: absolute;
 }
 
-/*
+/******************
     DEBUT DU HEADER
-*/
+*******************/
 header {
     /* Le header prend 100% verticalement */
     width: 100%;
@@ -111,9 +116,9 @@ a.section-1-anchor {
     top: 93%;
 }
 
-/*
+/******************
     DEBUT SECTION 1
-*/
+*******************/
 section#section-1 {
     width: 100%;
     height: 100%;
@@ -146,7 +151,9 @@ a.section-2-anchor {
     top: 193%;
 }
 
-/* DEBUT SECTION 2 */
+/******************
+    DEBUT SECTION 2
+*******************/
 
 section#section-2 {
     width: 100%;
@@ -166,14 +173,14 @@ div#grid-circle {
     margin: 0 auto 0 auto;
     /* background-color: blue; */
     /* GRID */
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(3,33%);
 }
 
 /* On positionne les cercles dans la grille */
 
 div#grid-circle > div {
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 /* ligne 1 */
@@ -256,10 +263,14 @@ a.section-footer-anchor {
 }
 
 
-/* Pour tablette */
+/****************
+    Pour tablette
+*****************/
 @media screen and (max-width: 810px) and (min-width: 376px) {
 
-    /* PARTIE HEADER */
+    /****************
+        PARTIE HEADER
+    *****************/
 
     div#header-container-1 {
         width: 60%;
@@ -283,7 +294,9 @@ a.section-footer-anchor {
         background-repeat: no-repeat;
     }
 
-    /* PARTIE SECTION 1 */
+    /*******************
+        PARTIE SECTION 1
+    ********************/
 
     div#section-1-container-1 {
         top: 30%;
@@ -296,7 +309,9 @@ a.section-footer-anchor {
         height: 250px;
     }
 
-    /* PARTIE SECTION 2 */
+    /*******************
+        PARTIE SECTION 2
+    ********************/
 
     /* On définit le div de la grille */
     div#grid-circle {
@@ -328,10 +343,14 @@ a.section-footer-anchor {
 
 }
 
-/* Pour smartphone */
+/******************
+    Pour smartphone
+*******************/
 @media screen and (max-width: 375px) {
 
-    /* PARTIE HEADER */
+    /****************
+        PARTIE HEADER
+    *****************/
 
     h1 {
         margin: 0;
@@ -375,7 +394,9 @@ a.section-footer-anchor {
         top: 93%;
     }
 
-    /* PARTIE SECTION 1 */
+    /*******************
+        PARTIE SECTION 1
+    ********************/
 
     div#section-1-container-1 {
         top: 25%;
@@ -395,7 +416,9 @@ a.section-footer-anchor {
         top: 193%;
     }
 
-    /* PARTIE SECTION 2 */
+    /*******************
+        PARTIE SECTION 2
+    ********************/
 
     /* on dessine les cercles */
     div.circle {
