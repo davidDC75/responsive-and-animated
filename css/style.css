@@ -262,6 +262,29 @@ a.section-footer-anchor {
     top: 293%;
 }
 
+/***************
+    DEBUT FOOTER
+****************/
+
+footer#footer {
+    width: 100%;
+    height: 15%;
+}
+
+/* L'ancre pour remonter en début de page */
+a.footer-top-anchor {
+    left: 50%;
+    top: 304%;
+}
+
+footer#footer p {
+    position: relative;
+    top: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 
 /****************
     Pour tablette
@@ -507,5 +530,17 @@ a.section-footer-anchor {
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
+    }
+
+    /***************
+        DEBUT FOOTER
+    ****************/
+
+    /* L'ancre pour remonter en début de page */
+    a.footer-top-anchor {
+        width:8%;
+        font-size: 1rem;
+        left: 90%;
+        top: 304%;
     }
 }
