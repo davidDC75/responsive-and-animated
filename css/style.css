@@ -66,9 +66,14 @@ a {
 /******************************
     type de position des ancres
 *******************************/
-a.anchor-common {
-    display: block;
+
+a.section-anchor {
     position: absolute;
+    left: 50%;
+    top: 93%;
+
+    animation-name: opacity-keyframes, blur-keyframes;
+    animation-duration: 4s, 2s;
 }
 
 /******************
@@ -79,7 +84,6 @@ header {
     width: 100%;
     /* Le header prend 100% verticalement */
     height:100%;
-    background-color: white;
 }
 
 div#header-container-1 {
@@ -97,7 +101,6 @@ div#header-container-1 {
 }
 
 h1#title {
-    position: relative;
     font-size: 2.3rem;
     font-weight: 400;
     font-style: normal;
@@ -134,14 +137,6 @@ div.animation-image-logo {
     animation-timing-function: ease-in;
     animation-duration: 1.5s, 1.5s;
     animation-iteration-count: 1;
-}
-
-a.section-1-anchor {
-    left: 50%;
-    top: 93%;
-
-    animation-name: opacity-keyframes, blur-keyframes;
-    animation-duration: 4s, 2s;
 }
 
 /******************
@@ -210,11 +205,6 @@ div.gun-animation {
 
 div.gun:hover {
     transform: rotate(4deg);
-}
-
-a.section-2-anchor {
-    left: 50%;
-    top: 93%;
 }
 
 /******************
@@ -334,7 +324,7 @@ div.circle {
     /* on positionne les cercles dans la cellule de la grid*/
     position: relative;
     top: calc(50% - 80px);
-    margin: 0 auto 0 auto;
+    left: calc(50% - 80px);
     /* Si on modifie la taille, il faut modifier juste en bas le line-height pour le vertical-align du texte */
     width:160px;
     height:160px;
@@ -360,25 +350,21 @@ span.icons-style {
     font-size: 70px;
 }
 
-/* L'ancre de la section 2 */
-a.section-footer-anchor {
-    left: 50%;
-    top: 93%;
-}
-
 /***************
     DEBUT FOOTER
 ****************/
 
 footer#footer {
+    position: relative;
     width: 100%;
     height: 15%;
 }
 
 /* L'ancre pour remonter en début de page */
 a.footer-top-anchor {
+    position: absolute;
     left: 50%;
-    top: 304%;
+    top: 5%;
 }
 
 footer#footer p {
@@ -504,8 +490,8 @@ footer#footer p {
     div.circle {
         /* on positionne les cercles dans la cellule de la grid*/
         position: relative;
-        top: 23%;
-        margin: 0 auto 0 auto;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
         /* Si on modifie la taille, il faut modifier juste en bas le line-height pour le vertical-align du texte */
         width:100px;
         height:100px;
@@ -532,6 +518,13 @@ footer#footer p {
 
     html {
         font-size: 5vw;
+    }
+
+    a.section-anchor {
+        width:8%;
+        font-size: 1rem;
+        left: 90%;
+        top: 93%;
     }
 
     /****************
@@ -578,13 +571,6 @@ footer#footer p {
         transform: rotate(-6deg);
     }
 
-    a.section-1-anchor {
-        width:8%;
-        font-size: 1rem;
-        left: 90%;
-        top: 93%;
-    }
-
     /*******************
         PARTIE SECTION 1
     ********************/
@@ -617,13 +603,6 @@ footer#footer p {
         background-size: contain;
     }
 
-    a.section-2-anchor {
-        width:8%;
-        font-size: 1rem;
-        left: 90%;
-        top: 93%;
-    }
-
     /*******************
         PARTIE SECTION 2
     ********************/
@@ -632,8 +611,8 @@ footer#footer p {
     div.circle {
         /* on positionne les cercles dans la cellule de la grid*/
         position: relative;
-        top: 20%;
-        margin: 0 auto 0 auto;
+        top: calc(50% - 35px);
+        left: calc(50% - 35px);
         /* Si on modifie la taille, il faut modifier juste en bas le line-height pour le vertical-align du texte */
         width:70px;
         height:70px;
@@ -648,14 +627,6 @@ footer#footer p {
         text-align:center;
         /* alignement verticale */
         line-height: 90px;
-    }
-
-    /* L'ancre de la section 2 */
-    a.section-footer-anchor {
-        width:8%;
-        font-size: 1rem;
-        left: 90%;
-        top: 93%;
     }
 
     /* On définit le div de la grille */
@@ -726,6 +697,6 @@ footer#footer p {
         width:8%;
         font-size: 1rem;
         left: 90%;
-        top: 304%;
+        top: 5%;
     }
 }
