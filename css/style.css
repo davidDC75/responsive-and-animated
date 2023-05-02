@@ -79,14 +79,13 @@ header {
     width: 100%;
     /* Le header prend 100% verticalement */
     height:100%;
-    margin: 0 auto 0 auto;
     background-color: white;
 }
 
 div#header-container-1 {
     width: 80%;
     height: 450px;
-    position: relative;
+    position: absolute;
     top: calc(50% - 225px);
     left: calc(50% - 40%);
     /* on dispose le nom et le logo horizontalement */
@@ -99,7 +98,6 @@ div#header-container-1 {
 
 h1#title {
     position: relative;
-    top: 0px;
     font-size: 2.3rem;
     font-weight: 400;
     font-style: normal;
@@ -159,8 +157,6 @@ section#section-1 {
 div#section-1-container-1 {
     width: 70%;
     height: 300px;
-    margin: 0 auto 0 auto;
-    padding: 0;
     position: absolute;
     top: calc(50% - 150px);
     left: calc(50% - 35%);
@@ -229,7 +225,6 @@ section#section-2 {
     position: relative;
     width: 100%;
     height: 100%;
-    margin: 0 auto 0 auto;
     background-color: white;
 }
 
@@ -338,7 +333,7 @@ div.grid-anim-6 {
 div.circle {
     /* on positionne les cercles dans la cellule de la grid*/
     position: relative;
-    top: 23%;
+    top: calc(50% - 80px);
     margin: 0 auto 0 auto;
     /* Si on modifie la taille, il faut modifier juste en bas le line-height pour le vertical-align du texte */
     width:160px;
