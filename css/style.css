@@ -228,18 +228,12 @@ div#grid-circle {
     top: calc(50% - 40%);
     left: calc(50% - 35%);
     margin: 0 auto 0 auto;
-
-    /* background-color: blue; */
     /* GRID */
     grid-template-columns: repeat(5,20%);
     grid-template-rows: repeat(3,33%);
 }
 
 /* On positionne les cercles dans la grille */
-
-/* div#grid-circle > div {
-    background-color: blue;
-} */
 
 /* ligne 1 */
 div.circle-h-grid {
@@ -483,7 +477,6 @@ footer#footer p {
         position: absolute;
         top: calc(50% - 25%);
         left: calc(50% - 35%);
-        /* background-color: blue; */
     }
 
     /* on dessine les cercles */
@@ -546,9 +539,8 @@ footer#footer p {
     }
 
     div#header-container-1 {
-        width:100%;
+        width: 100%;
         height: 70%;
-        /* On place le div verticalement */
         position: absolute;
         top: calc(50% - 35%);
         left: calc(50% - 50%);
