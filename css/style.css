@@ -75,6 +75,7 @@ a.anchor-common {
     DEBUT DU HEADER
 *******************/
 header {
+    position: relative;
     width: 100%;
     /* Le header prend 100% verticalement */
     height:100%;
@@ -84,11 +85,10 @@ header {
 
 div#header-container-1 {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    /* On positionne le div verticalement */
+    height: 450px;
     position: relative;
-    top: 25%;
+    top: calc(50% - 225px);
+    left: calc(50% - 40%);
     /* on dispose le nom et le logo horizontalement */
     display: flex;
     flex-direction: row;
@@ -150,6 +150,7 @@ a.section-1-anchor {
     DEBUT SECTION 1
 *******************/
 section#section-1 {
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 0 auto 0 auto;
@@ -157,10 +158,12 @@ section#section-1 {
 
 div#section-1-container-1 {
     width: 70%;
+    height: 300px;
     margin: 0 auto 0 auto;
     padding: 0;
-    position: relative;
-    top: 30%;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 35%);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -215,7 +218,7 @@ div.gun:hover {
 
 a.section-2-anchor {
     left: 50%;
-    top: 193%;
+    top: 93%;
 }
 
 /******************
@@ -223,6 +226,7 @@ a.section-2-anchor {
 *******************/
 
 section#section-2 {
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 0 auto 0 auto;
@@ -235,8 +239,9 @@ div#grid-circle {
     width: 70%;
     height: 80%;
     align-items: center;
-    position: relative;
-    top: 8%;
+    position: absolute;
+    top: calc(50% - 40%);
+    left: calc(50% - 35%);
     margin: 0 auto 0 auto;
 
     /* background-color: blue; */
@@ -363,7 +368,7 @@ span.icons-style {
 /* L'ancre de la section 2 */
 a.section-footer-anchor {
     left: 50%;
-    top: 293%;
+    top: 93%;
 }
 
 /***************
@@ -433,8 +438,9 @@ footer#footer p {
 
     div#header-container-1 {
         width: 60%;
-        top: 30%;
-        gap: 50px;
+        height: 130px;
+        top: calc(50% - 65px);
+        left: calc(50% - 30%);
     }
 
     h1#title {
@@ -460,7 +466,7 @@ footer#footer p {
     ********************/
 
     div#section-1-container-1 {
-        top: 30%;
+        top: calc(50% - 125px);
     }
 
     /* TODO : chercher à garder les proportions des div lors d'un redimensionnement */
@@ -493,8 +499,9 @@ footer#footer p {
         display: grid;
         width: 70%;
         height: 50%;
-        position: relative;
-        top: 20%;
+        position: absolute;
+        top: calc(50% - 25%);
+        left: calc(50% - 35%);
         /* background-color: blue; */
     }
 
@@ -552,9 +559,11 @@ footer#footer p {
 
     div#header-container-1 {
         width:100%;
+        height: 70%;
         /* On place le div verticalement */
-        position: relative;
-        top: 23%;
+        position: absolute;
+        top: calc(50% - 35%);
+        left: calc(50% - 50%);
         /* on dispose le nom et le logo verticalement */
         display: flex;
         flex-direction: column;
@@ -586,7 +595,10 @@ footer#footer p {
     ********************/
 
     div#section-1-container-1 {
-        top: 25%;
+        width: 80%;
+        height: 70%;
+        top: calc(50% - 35%);
+        left: calc(50% - 40%);
         flex-direction: column;
         gap: 20px;
     }
@@ -614,7 +626,7 @@ footer#footer p {
         width:8%;
         font-size: 1rem;
         left: 90%;
-        top: 193%;
+        top: 93%;
     }
 
     /*******************
@@ -648,7 +660,7 @@ footer#footer p {
         width:8%;
         font-size: 1rem;
         left: 90%;
-        top: 293%;
+        top: 93%;
     }
 
     /* On définit le div de la grille */
@@ -656,9 +668,9 @@ footer#footer p {
         display: grid;
         width: 70%;
         height: 40%;
-        position: relative;
-        top: 30%;
-        margin: 0 auto 0 auto;
+        position: absolute;
+        top: calc(50% - 20%);
+        left: calc(50% - 35%);
         /* GRID */
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
