@@ -422,7 +422,7 @@ footer#footer p {
         font-size: 1.2rem;
     }
 
-    span.firstname-1 {
+    h1 span:nth-child(2) {
         display: none;
     }
 
@@ -530,11 +530,11 @@ footer#footer p {
         width:100%;
     }
 
-    span.firstname-1 {
+    h1 span:nth-child(2) {
         display: none;
     }
 
-    span.lastname-1 {
+    h1 span:nth-child(5) {
         display: none;
     }
 
