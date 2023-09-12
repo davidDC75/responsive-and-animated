@@ -45,7 +45,7 @@ html, body, header, section, main, footer {
 html {
     /* Animation scrolling lorsqu'on clique sur une ancre */
     scroll-behavior:smooth;
-    font-size: 1vw;
+    font-size: 1.7em;
 }
 
 body {
